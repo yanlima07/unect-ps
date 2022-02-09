@@ -1,0 +1,330 @@
+.modal-projetos {
+  display: none;
+}
+
+.modal-comercial {
+  display: none;
+}
+
+.modal-marketing {
+  display: none;
+}
+
+.modal-rh {
+  display: none;
+}
+
+.modal-financeiro {
+  display: none;
+}
+
+.modal-design {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 28052000;
+}
+
+.modal .modal-diretorias-content {
+  font-family: Nunito;
+  background-color: #333333;
+  width: 740px;
+  height: 470px;
+  /* margin: 180px auto; */
+  /* z-index: 28052000; */
+  border: 3px solid rgba(56, 103, 214, 0.5);
+  /* box-sizing: border-box; */
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 369px 368px;
+  grid-template-rows: 60px 405px;
+  /* overflow: visible; */
+}
+
+.modal .modal-diretorias-content p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fafafa;
+}
+
+.modal .modal-diretorias-content .fecharmodal {
+  display: block;
+  grid-column: 1/3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: -20px;
+  margin-left: 656px;
+  cursor: pointer;
+}
+
+.modal .modal-diretorias-content .fecharmodal:hover{
+  filter: brightness(.6);
+}
+
+.modal .modal-diretorias-content .mobile-fecharmodal {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+}
+
+.modal .modal-diretorias-content .modal-titulo {
+  display: flex;
+  grid-column: 1/3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+  margin-top: 20px;
+}
+
+.modal .modal-diretorias-content .modal-titulo h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.modal .modal-diretorias-content .modal-titulo .texto1 {
+  display: block;
+  color: #444444;
+}
+
+.modal .modal-diretorias-content .modal-titulo .texto2 {
+  color: #3867d6;
+}
+
+.modal .modal-diretorias-content .modal-titulo .texto2-2 {
+  color: #3867d6;
+}
+
+.modal .modal-diretorias-content .modal-titulo .texto3 {
+  display: block;
+  text-shadow: rgb(255, 255, 255) 1px 0px 0px,
+    rgb(255, 255, 255) 0.540302px 0.841471px 0px,
+    rgb(255, 255, 255) -0.416147px 0.909297px 0px,
+    rgb(255, 255, 255) -0.989992px 0.14112px 0px,
+    rgb(255, 255, 255) -0.653644px -0.756802px 0px,
+    rgb(255, 255, 255) 0.283662px -0.958924px 0px,
+    rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+.modal .modal-diretorias-content .modal-texto {
+  grid-column: 1/2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 33px;
+  margin-left: 31px;
+  margin-right: 23px;
+}
+
+.modal .modal-diretorias-content .modal-titulo2 {
+  display: block;
+  grid-column: 2/3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 33px;
+}
+
+.modal .modal-diretorias-content .modal-titulo2 h2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #fafafa;
+  text-shadow: 0px 0px 2px #ffffff;
+}
+
+.modal .modal-diretorias-content .modal-texto2 {
+  grid-column: 2/3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 81px;
+}
+
+.modal .modal-diretorias-content .modal-texto2 p {
+  margin-bottom: 10px;
+}
+
+.modal .modal-diretorias-content .modal-texto2 img {
+  margin-right: 10px;
+}
+
+/* -------------------------> MEDIA QUERIE MODAL DIRETORIA <-------------------------  */
+@media (max-width: 773px){
+  .modal .modal-diretorias-content {
+    width: 640px; 
+    grid-template-columns: 320px 320px;
+  }
+
+  .modal .modal-diretorias-content .fecharmodal{
+    margin-left: 556px;
+  }
+
+  .modal .modal-diretorias-content .modal-texto{
+    margin-top: 10px;
+  }
+
+  .modal .modal-diretorias-content .modal-texto p{
+    line-height: 19px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo2{
+    margin-top: 13px;
+  }
+
+  .modal .modal-diretorias-content .modal-texto2{
+    margin-top: 61px;
+    margin-right: 20px;
+  }
+  
+}
+
+@media (max-width: 673px){
+  .modal .modal-diretorias-content { 
+    width: 450px;
+    height: 600px;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: none;
+
+  }
+
+  .modal .modal-diretorias-content .modal-titulo {
+    display: block; /* retirar o display: flex do modal-titulo (incompatibilidade com alguns celulares)*/
+    margin-top: 30px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo .texto1 {
+    display: none;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo .texto3{
+    display: none;
+  }
+
+  .modal .modal-diretorias-content .modal-texto{
+    margin-top: 10px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo2{
+    margin-left: 31px;
+    margin-top: 33px;
+  }
+
+  .modal .modal-diretorias-content .modal-texto2{
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+
+  .modal .modal-diretorias-content .fecharmodal {
+    display: none;
+  }
+
+  .modal .modal-diretorias-content .mobile-fecharmodal{
+    display: block;
+    margin-left: 390px;
+  }
+
+  .modal-financeiro .modal .modal-diretorias-content .modal-titulo .texto2-2{
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 479px){
+  .modal .modal-diretorias-content { 
+    width: 301px;
+    height: 428px;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+
+  .modal .modal-diretorias-content p{
+    font-size: 13px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo h1{
+    font-size: 24px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo2{
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo2 h2{
+    font-size: 16px;
+  }
+  
+  .modal .modal-diretorias-content .modal-texto2{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .modal .modal-diretorias-content .modal-texto2 p{
+    margin-bottom: 20px;
+  }
+
+  .modal .modal-diretorias-content .mobile-fecharmodal{
+    margin-left: 250px;
+  }
+  
+  .modal .modal-diretorias-content::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .modal .modal-diretorias-content::-webkit-scrollbar-track {
+    background: #222222;       
+    border-radius: 40px;
+  }
+  
+  .modal .modal-diretorias-content::-webkit-scrollbar-thumb {
+    background-color: #39589F;;    
+    border-radius: 20px;       
+  }
+
+  .modal-rh .modal .modal-diretorias-content .modal-titulo{
+    margin-left: 60px;
+  }
+  
+}
+
+@media (max-width: 325px){
+  .modal .modal-diretorias-content { 
+    width: 220px;
+  }
+  
+  .modal .modal-diretorias-content .mobile-fecharmodal{
+    width: 24px;
+    margin-left: 170px;
+  }
+
+  .modal .modal-diretorias-content .modal-titulo h1{
+    font-size: 20px;
+  }
+  
+}
+
+
